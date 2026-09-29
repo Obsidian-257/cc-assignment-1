@@ -1,0 +1,25 @@
+﻿
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"greeting":"Hello Azure","hostname":"SandboxHost-639263012857410414"}
+                    
+RawContent        : HTTP/1.1 200 OK
+                    Connection: close
+                    Content-Length: 71
+                    Content-Type: application/json
+                    Date: Tue, 29 Sep 2026 18:00:06 GMT
+                    Server: Werkzeug/3.1.9 Python/3.12.14
+                    
+                    {"greeting":"Hello Azure","hostnam...
+Forms             : 
+Headers           : {[Connection, close], [Content-Length, 71], [Content-Type, 
+                    application/json], [Date, Tue, 29 Sep 2026 18:00:06 GMT]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : 
+RawContentLength  : 71
+
+
+

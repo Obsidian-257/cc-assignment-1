@@ -1,0 +1,12 @@
+﻿[
+  {
+    "name": "GREETING",
+    "secureValue": null,
+    "value": "Hello Azure"
+  },
+  {
+    "name": "API_KEY",
+    "secureValue": null,
+    "value": null
+  }
+]
