@@ -1,0 +1,67 @@
+﻿docker : #0 building with "desktop-linux" instance using docker driver
+En línea: 1 Carácter: 1
++ docker build --progress=plain -t cc-demo:1.1 . 2>&1 | Out-File -Encod ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (#0 building wit...g docker driver:String) [], 
+    RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 483B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 1.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 128B done
+#3 DONE 0.0s
+
+#4 [builder 1/4] FROM docker.io/library/python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea0
+8c31f8be030f824196b0ae4db6d462c84e51f
+#4 resolve docker.io/library/python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030
+f824196b0ae4db6d462c84e51f 0.0s done
+#4 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 1.55kB done
+#5 DONE 0.0s
+
+#6 [builder 2/4] WORKDIR /app
+#6 CACHED
+
+#7 [builder 3/4] COPY requirements.txt .
+#7 CACHED
+
+#8 [builder 4/4] RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
+#8 CACHED
+
+#9 [stage-1 3/5] COPY --from=builder /install /usr/local
+#9 CACHED
+
+#10 [stage-1 4/5] COPY . .
+#10 DONE 0.0s
+
+#11 [stage-1 5/5] RUN useradd --create-home --uid 10001 appuser &&     mkdir -p /data &&   
+  chown -R appuser:appuser /data /app
+#11 DONE 0.4s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 0.2s done
+#12 exporting manifest 
+sha256:3e15a20ba8e84ed023f803d043616d05146b00e583ed73417dd9800b3b4d87dc 0.0s done
+#12 exporting config 
+sha256:ef349806afff60485559e577ccd63748ba47abc4125e75de4f5d9c939da7c3bd 0.0s done
+#12 exporting attestation manifest 
+sha256:bebc7340dc382fe499c080c70cb054c9180d2f6c05788c4a219d8a1918d1a5b7 0.0s done
+#12 exporting manifest list 
+sha256:937cce4938e4bdee2014d97857d083c270d14ebcfa68b16525cf9f13463a7263 0.0s done
+#12 naming to docker.io/library/cc-demo:1.1
+#12 naming to docker.io/library/cc-demo:1.1 done
+#12 unpacking to docker.io/library/cc-demo:1.1 0.1s done
+#12 DONE 0.4s
+
+View build details: 
+docker-desktop://dashboard/build/desktop-linux/desktop-linux/bczryusg8s4q0m063ej43oeky
